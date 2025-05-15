@@ -11,9 +11,9 @@
             PreparedStatement ps = null;
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver"); // Driver MySQL 8+
-                String url = "jdbc:mysql://localhost:3306/uriel?useSSL=false&serverTimezone=UTC";
+                String url = "mysql://root:iGpJdndzvbhLAxbISmSznKcIlXPWVYlB@mysql.railway.internal:3306/railway?useSSL=false&serverTimezone=UTC";
                 String user = "root";
-                String pass = ""; // Cambia aquí tu contraseña
+                String pass = "iGpJdndzvbhLAxbISmSznKcIlXPWVYlB"; // Cambia aquí tu contraseña
                 
                 conn = DriverManager.getConnection(url, user, pass);
                 String sql = "INSERT INTO usuarios (nombre, contrasena) VALUES (?, ?)";
