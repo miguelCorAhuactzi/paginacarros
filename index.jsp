@@ -9,9 +9,9 @@
         PreparedStatement ps = null;
         ResultSet rs = null;
 
-        String url = "jdbc:mysql://localhost:3306/uriel";
+        String url = "mysql://root:iGpJdndzvbhLAxbISmSznKcIlXPWVYlB@mysql.railway.internal:3306/railway";
         String user = "root";
-        String pass = "";
+        String pass = "iGpJdndzvbhLAxbISmSznKcIlXPWVYlB";
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
